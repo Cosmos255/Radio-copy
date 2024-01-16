@@ -1,4 +1,4 @@
-const number = document.getElementById("number ");
+const number = document.getElementById("number");
 let numberr;
 const max = 10;
 const min = 0;

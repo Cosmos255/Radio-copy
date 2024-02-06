@@ -1,0 +1,76 @@
+h{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px red;
+    letter-spacing: 1px;
+    
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+}
+
+#Random {
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+
+    background-color: black;
+    color: #ff0000b4;
+    font-size: 30px;
+
+}
+
+#Random:hover {
+    background-color: #ff0000b4 ;
+    color: black;
+    transition: background-color 5s;
+    transition: color 10s;
+    transform: scale(1.5 , 1.5);
+    transition: transform 1.5s ;
+}
+
+#twod {
+   font-weight: 600;
+   color: black;
+   background-color: #630707b4;
+   letter-spacing: 1px;
+   float: right ;
+   margin: 20px;
+   padding: 20px;
+   font-size: 50px;
+}
+
+#twod:hover {
+    transform: rotate(360deg);
+    transition: transform 5s;
+    
+}
+
+#radio{
+    display: flex;
+    color: red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    padding: none;
+}
+
+

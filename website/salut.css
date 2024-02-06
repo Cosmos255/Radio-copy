@@ -1,0 +1,85 @@
+.container{
+ display: flex; 
+ height: 90vh;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ justify-content: space-between;
+
+ 
+
+ 
+
+}
+
+#box{
+    font-size: 8em;
+    text-align: center;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    
+    
+    
+    
+
+}
+
+.item1{
+    align-self: center;
+  order: 1;
+  height: 150px;
+  background-color: green ;
+}
+.item2{
+   order: 2;
+align-self: flex-start;
+  height: 150px;
+  background-color: yellow;
+    
+}
+.item3{
+    order: -1;
+align-self: flex-end ;
+  height: 150px;
+  background-color: red;
+    
+}
+.item4{
+    align-self: center;
+    order: 0;
+    
+    height: 150px;
+    background-color: blue;
+}
+
+
+
+
+.item1:hover{
+    transform: rotate(360deg);
+    transition: transform 2s;
+    
+   
+    
+
+}
+
+.item2:hover{
+    transform: rotate(90deg);
+    transition: transform 2s;
+
+}
+
+.item3:hover{
+    background-color: aqua;
+    transition: background-color 2s;
+
+}
+
+.item4:hover{
+    transform: scale(2 , 2);
+    transition: transform 2s;
+
+}
+

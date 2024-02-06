@@ -19,7 +19,8 @@ p{
 body {
     background-color: black;
     color: white;
-    padding: 100px;
+    padding: 20px;
+
 }
 
 #Random {
@@ -56,6 +57,20 @@ body {
     transform: rotate(360deg);
     transition: transform 5s;
     
+}
+
+#radio{
+    display: flex;
+    color: red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    padding: none;
 }
 
 

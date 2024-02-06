@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "index.css">
-    <title>Siteul tau personal</title>
+    <script src="https://kit.fontawesome.com/2f8e00186e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css"></link>
+    <title>Document</title>
 </head>
 <body>
-    <div id="twod">DMD</div>
-    <h>Bun venit pe siteul tau personal</h> 
-    <p >Random number Generator between 0 and 10 enjoy :)</p> 
-    <p >apasa butonul</p> 
-    <button id="Random" onclick="Salut()">Random</button>
-    <p id="number"></p>
-    <p >enjoy :P</p>
-    <audio controls>
-        <source src="http://zuicast.digitalag.ro:9420/zu">
-    </audio>
+    <button class="lines" onclick="sopen()" id="bars"><i class="fa-solid fa-bars"></i></button>
+    <div id="sidebar" style="display: none;">
+             <button id="close" onclick="sclose()">Close<i class="fa-solid fa-x"></i></button>
+            <div style="display: block;">
+             <a href="">salut</a><br>
+             <a href="">home</a><br>
+             <a href="">sbrrrr</a><br>
+             <a href="">salut</a><br>
+             <a href="">salut</a><br>
+            </div>
+        </div>
 
+        <div id="radio">
+          
+            <button id="playbtn" class="fa-solid fa-play "></button>
+            <p>Radio ZU</p>
 
-    <script src="index.js" defer></script>
+            <button id="mutebtn" class="fa-solid fa-volume-high"></button>
+
+            <audio  id="radiolink">
+                <source src="http://zuicast.digitalag.ro:9420/zu">
+              </audio>
+
+             <div id="audioslider">
+                <input type="range" min="0" max="10" value="10" id="audioslide">
+             </div> 
+        </div>
+
+      
+     
+    
+    <script src="index.js"></script>
 </body>
 </html>

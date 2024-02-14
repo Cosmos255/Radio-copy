@@ -71,11 +71,17 @@ function volumef(){
     console.log(volume);
     
 
-    if(volume > 0 && !mute ){
+    if(volume > 0.4 && !mute ){
         mutebtn.className = "fa-solid fa-volume-high"
         radio.volume = volume;
     
     }
+    else if(volume > 0 && !mute){
+        mutebtn.className = "fa-solid fa-volume-low"
+        radio.volume = volume;
+    }
+
+
     else if(volume == 0 || mute == true){
         mutebtn.className = "fa-solid fa-volume-off"
         radio.volume = 0;

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2f8e00186e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="salut.css"></link>
     <title>Document</title>
 </head>
 <body>
+ <header>
     <button class="lines" onclick="sopen()" id="bars"><i class="fa-solid fa-bars"></i></button>
     <div id="sidebar" style="display: none;">
              <button id="close" onclick="sclose()">Close<i class="fa-solid fa-x"></i></button>
@@ -19,23 +20,26 @@
              <a href="">salut</a><br>
             </div>
         </div>
-
+ </header>
+ <main>
         <div id="radio">
           
-            <button id="playbtn" class="fa-solid fa-play "></button>
+            <button id="playbtn" class="fa-solid fa-play  " ></button>
             <p>Radio ZU</p>
 
-            <button id="mutebtn" class="fa-solid fa-volume-high"></button>
+            <button id="mutebtn" class="fa-solid fa-volume-high" ></button>
 
             <audio  id="radiolink">
                 <source src="http://zuicast.digitalag.ro:9420/zu">
               </audio>
 
-             <div id="audioslider">
+             <div id="audioslider" style="float: right;">
                 <input type="range" min="0" max="10" value="10" id="audioslide">
              </div> 
         </div>
-
+ </main>
+ 
+ <footer></footer>
       
      
     

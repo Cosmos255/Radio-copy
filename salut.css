@@ -1,85 +1,77 @@
-.container{
- display: flex; 
- height: 90vh;
- align-items: flex-start;
- flex-wrap: wrap;
- justify-content: space-between;
-
- 
-
- 
-
+body{
+    background-color: #88b103;
+    background-color: gray;
 }
 
-#box{
-    font-size: 8em;
-    text-align: center;
-    width: 150px;
-    border: 2px solid black;
-    border-radius: 5px;
+header{
     
-    
-    
-    
-    
-
 }
 
-.item1{
-    align-self: center;
-  order: 1;
-  height: 150px;
-  background-color: green ;
-}
-.item2{
-   order: 2;
-align-self: flex-start;
-  height: 150px;
-  background-color: yellow;
+main{
     
 }
-.item3{
-    order: -1;
-align-self: flex-end ;
-  height: 150px;
-  background-color: red;
+
+footer{
     
 }
-.item4{
-    align-self: center;
-    order: 0;
+
+.lines{
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: inherit;
+    font-size: 40px;
+    border: none;
+    background-color: #a0bd00;
     
-    height: 150px;
-    background-color: blue;
+}
+
+.lines:hover{
+    
+    color: #a0bd00;
+    background: black;
 }
 
 
 
-
-.item1:hover{
-    transform: rotate(360deg);
-    transition: transform 2s;
+#radio{
+    background-color: rgba(0, 0, 0, 0.952) ;
+    display: flex;
+    color:  #a0bd00;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
     
-   
     
-
+    
 }
 
-.item2:hover{
-    transform: rotate(90deg);
-    transition: transform 2s;
-
+#playbtn{
+   background-color: rgb(43, 43, 43) ;
+   color: #8DB600;
+   border: none;
+   width: 60px;
+   height: 100%;
+   font-size: 25px;
 }
 
-.item3:hover{
-    background-color: aqua;
-    transition: background-color 2s;
+#playbtn:hover{
+    background-color:  #a0bd00; ;
+    color: white;
+ }
+
+#mutebtn{
+    display: flex;
+    background-color: inherit;
+    border: none;
+    float: right;
+    color: #8DB600;
 
 }
-
-.item4:hover{
-    transform: scale(2 , 2);
-    transition: transform 2s;
-
-}
-

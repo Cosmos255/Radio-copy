@@ -3,7 +3,7 @@ let url = "https://radiozu.ro/trackid/radiozu-live.txt";
 let livetext  = document.getElementById("livetxt");
 let xhttp = new XMLHttpRequest();
 
- xhtpp.onload = function (){
+ xhttp.onload = function (){
      livetext.innerHTML = xhttp.responseText;
  };
 xhttp.open("GET", url);

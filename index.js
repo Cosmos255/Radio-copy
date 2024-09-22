@@ -1,13 +1,13 @@
 
-const radiozulivetxtlink = "https://radiozu.ro/trackid/radiozu-live.txt";
-const livetext  = document.getElementById("livetxt");
-let xhr1 = new XMLHttpRequest();
+let url = "https://radiozu.ro/trackid/radiozu-live.txt";
+let livetext  = document.getElementById("livetxt");
+let xhttp = new XMLHttpRequest();
 
- xhr1.onload = function (){
-     livetext.innerHTML = xhr1.responseText;
+ xhtpp.onload = function (){
+     livetext.innerHTML = xhttp.responseText;
  };
-xhr1.open("GET", radiozulivetxtlink);
-xhr1.send();
+xhttp.open("GET", url);
+xhttp.send();
 
 
 

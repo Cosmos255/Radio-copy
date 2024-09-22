@@ -1,4 +1,28 @@
 
+const radiozulivetxtlink = "https://radiozu.ro/trackid/radiozu-live.txt";
+const livetext  = document.getElementById("livetxt");
+let xhr1 = new XMLHttpRequest();
+
+ xhr1.onload = function (){
+     livetext.innerHTML = xhr1.responseText;
+ };
+xhr1.open("GET", radiozulivetxtlink);
+xhr1.send();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const radio = document.getElementById("radiolink");
 const playbtn = document.getElementById("playbtn");
 const number = document.getElementById("number");

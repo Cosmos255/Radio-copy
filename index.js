@@ -1,13 +1,24 @@
 
-let url = "https://radiozu.ro/trackid/radiozu-live.txt";
-let livetext  = document.getElementById("livetxt");
-let xhttp = new XMLHttpRequest();
+async function fetchLiveText(){
+    const livetext = document.getElementById("livetxt");
+    let url = "https://radiozu.ro/trackid/radiozu-live.txt";
+    try{
+        const response = await fetch(url);
 
- xhttp.onload = function (){
-     livetext.innerHTML = xhttp.responseText;
- };
-xhttp.open("GET", url);
-xhttp.send();
+        if(!response.ok){
+            throw new Error("Could not fetch data");
+        }
+         
+        const data = await response.text()
+        livetext.innerHTML = data;
+    }
+    catch(error){
+        console.error(error);
+    }
+}
+
+
+setInterval(fetchLiveText, 15000);
 
 
 
